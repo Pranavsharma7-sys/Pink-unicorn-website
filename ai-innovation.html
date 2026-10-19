@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Innovation — Pink Unicorn</title>
+  <meta name="description" content="Pink Unicorn's AI Innovation division provides enterprise-grade LLM evaluation, data labeling, model fine-tuning, and RAG optimization services." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Extra tab-scroll script needs the section IDs */
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="Pink Unicorn Home">
+        <img src="logo.jpg" alt="Pink Unicorn logo" />
+        <span class="logo-text">Pink <span>Unicorn</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-admission.html">My Admission</a></li>
+          <li><a href="overseas-investment.html">Overseas Investment</a></li>
+          <li><a href="ai-innovation.html" class="active">AI Innovation</a></li>
+          <li><a href="risk-council.html">Risk Council &amp; Advisory</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="my-admission.html">My Admission</a>
+    <a href="overseas-investment.html">Overseas Investment</a>
+    <a href="ai-innovation.html" class="active">AI Innovation</a>
+    <a href="risk-council.html">Risk Council &amp; Advisory</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════ -->
+  <section class="page-hero">
+    <h1>AI Innovation</h1>
+    <p class="hero-sub">
+      We help enterprises harness the full potential of large language models —
+      from evaluation and data engineering to production-ready deployment.
+    </p>
+  </section>
+
+  <!-- ═══ TAB ROW ═══════════════════════════════════════════ -->
+  <div class="tab-row" role="navigation" aria-label="Section tabs">
+    <div class="tab-list">
+      <button class="tab-btn active" id="tab-llm-eval"        onclick="scrollToSection('llm-evaluation', this)">LLM Evaluation</button>
+      <button class="tab-btn"        id="tab-data-label"      onclick="scrollToSection('data-labeling', this)">Data Labeling &amp; Annotation</button>
+      <button class="tab-btn"        id="tab-fine-tuning"     onclick="scrollToSection('llm-fine-tuning', this)">LLM Fine-Tuning</button>
+      <button class="tab-btn"        id="tab-rag"             onclick="scrollToSection('rag-optimization', this)">RAG Optimization</button>
+    </div>
+  </div>
+
+  <!-- ═══ CONTENT SECTIONS ══════════════════════════════════ -->
+  <div class="content-section">
+
+    <!-- 1. LLM Evaluation -->
+    <div class="ai-section" id="llm-evaluation">
+      <h2>LLM Evaluation</h2>
+      <p>
+        Before deploying a language model, you need rigorous, reproducible benchmarks.
+        Our evaluation frameworks assess accuracy, robustness, bias, latency, and cost
+        across leading open and proprietary models — so you choose the right foundation
+        for your product with confidence.
+      </p>
+    </div>
+
+    <!-- 2. Data Labeling & Annotation -->
+    <div class="ai-section" id="data-labeling">
+      <h2>Data Labeling &amp; Annotation</h2>
+      <p>
+        High-quality training data is the single greatest lever in any AI pipeline.
+        We provide expert human annotation, quality assurance workflows, and
+        domain-specific ontology design — delivering labeled datasets that meaningfully
+        improve model performance and reduce hallucination rates.
+      </p>
+    </div>
+
+    <!-- 3. LLM Fine-Tuning -->
+    <div class="ai-section" id="llm-fine-tuning">
+      <h2>LLM Fine-Tuning</h2>
+      <p>
+        Generic models drift. Fine-tuned models perform.
+        We design and execute supervised fine-tuning and reinforcement learning from
+        human feedback (RLHF) pipelines that adapt foundation models to your exact
+        tone, domain vocabulary, and output requirements — at any scale.
+      </p>
+    </div>
+
+    <!-- 4. RAG Optimization -->
+    <div class="ai-section" id="rag-optimization">
+      <h2>RAG Optimization</h2>
+      <p>
+        Retrieval-Augmented Generation unlocks real-time, grounded answers from your
+        proprietary knowledge base. Our team architects chunking strategies, embedding
+        models, vector store configurations, and re-ranking pipelines that maximize
+        retrieval precision and minimize response latency in production environments.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        <a href="mailto:hello@pinkunicorn.com">hello@pinkunicorn.com</a>
+      </div>
+      <div class="footer-copy">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M14.83 14.83A4 4 0 1 1 14.83 9.17"/>
+        </svg>
+        <span>2025 Pink Unicorn Advisors Ltd. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+  <script>
+    /* ── Tab scroll ─────────────────────────────────────── */
+    function scrollToSection(sectionId, btn) {
+      // Update active tab
+      document.querySelectorAll('.tab-btn').forEach(function (b) {
+        b.classList.remove('active');
+      });
+      btn.classList.add('active');
+
+      // Scroll to section with offset for sticky header + tab row
+      var section = document.getElementById(sectionId);
+      if (!section) return;
+      var headerH = document.querySelector('.site-header').offsetHeight;
+      var tabH    = document.querySelector('.tab-row').offsetHeight;
+      var top     = section.getBoundingClientRect().top + window.scrollY - headerH - tabH - 16;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }
+
+    /* ── Update active tab on scroll ─────────────────────── */
+    var sections = ['llm-evaluation','data-labeling','llm-fine-tuning','rag-optimization'];
+    var tabIds   = ['tab-llm-eval',  'tab-data-label','tab-fine-tuning','tab-rag'];
+
+    function onScroll() {
+      var headerH = document.querySelector('.site-header').offsetHeight;
+      var tabH    = document.querySelector('.tab-row').offsetHeight;
+      var offset  = headerH + tabH + 20;
+
+      var active = 0;
+      sections.forEach(function (id, i) {
+        var el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= offset) {
+          active = i;
+        }
+      });
+
+      document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); });
+      var activeBtn = document.getElementById(tabIds[active]);
+      if (activeBtn) activeBtn.classList.add('active');
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+  </script>
+</body>
+</html>

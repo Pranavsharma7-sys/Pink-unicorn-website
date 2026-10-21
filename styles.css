@@ -219,36 +219,113 @@ ul { list-style: none; }
 .site-footer {
   background: var(--light-bg);
   border-top: 1px solid var(--divider);
-  padding: 1.75rem var(--side-pad);
+  padding: 2.25rem var(--side-pad) 1.5rem;
 }
 
 .footer-inner {
   max-width: var(--max-w);
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1.5rem;
-  font-size: 0.78rem;
-  color: #888;
+  flex-direction: column;
+  gap: 1.25rem;
+  font-size: 0.8rem;
+  color: #6B7280;
   font-weight: 500;
 }
 
-.footer-inner a { color: #888; transition: color 0.2s; }
-.footer-inner a:hover { color: var(--magenta); }
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(203, 213, 224, 0.6);
+}
 
-.footer-contact,
-.footer-copy {
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-width: 440px;
+}
+
+.footer-company {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+.footer-affiliation {
+  font-size: 0.78rem;
+  color: #718096;
+}
+
+.footer-affiliation strong {
+  color: var(--magenta);
+  font-weight: 600;
+}
+
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  align-items: flex-end;
+  text-align: right;
+  max-width: 520px;
+}
+
+.footer-item {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.footer-address {
+  align-items: flex-start;
+  text-align: right;
+  line-height: 1.45;
 }
 
 .footer-contact svg,
-.footer-copy svg { flex-shrink: 0; }
+.footer-address svg {
+  flex-shrink: 0;
+  color: var(--magenta);
+  margin-top: 2px;
+}
 
-.footer-contact svg { color: var(--magenta); }
+.footer-copy svg {
+  flex-shrink: 0;
+  color: #888;
+}
+
+.footer-inner a {
+  color: #555;
+  transition: color 0.2s;
+}
+
+.footer-inner a:hover {
+  color: var(--magenta);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.footer-notice {
+  font-size: 0.75rem;
+  color: #888;
+}
 
 /* ============================================================
    HERO — shared
@@ -546,14 +623,26 @@ ul { list-style: none; }
 @media (max-width: 900px) {
   .nav-list  { display: none; }
   .hamburger { display: flex; }
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .footer-meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer-address {
+    text-align: left;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 
 @media (max-width: 600px) {
   .page-hero { padding: 3.5rem var(--side-pad) 2.5rem; }
   .services-grid { grid-template-columns: 1fr; }
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
 }
